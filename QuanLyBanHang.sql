@@ -106,5 +106,6 @@ CREATE PROCEDURE delProduct
 (IN pName varchar(30))
 BEGIN
 DELETE FROM product WHERE product.pName=pName;
+DELETE FROM orderdetail WHERE orderdetail.pName=pName;
 END //
 DELIMITER ;
